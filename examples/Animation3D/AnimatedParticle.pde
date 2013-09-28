@@ -11,7 +11,7 @@ public class AnimatedParticle extends AnimatedObject {
     speed = new PVector();
     pos = new PVector();
     init();
-    //startAnimation();
+    startAnimation();
   }
 
   @Override

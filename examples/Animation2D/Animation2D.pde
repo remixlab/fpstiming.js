@@ -4,17 +4,10 @@ ParticleSystem system;
 TimingHandler handler;
 
 public void setup() {
-  //size(640, 360, P2D);
-  size(640, 360, JAVA2D);
-  // /**
+  size(640, 360, P2D);
   system = new ParticleSystem(this);
   handler = new TimingHandler(system);
   system.startAnimation();
-  //*/
-  /**
-   handler = new TimingHandler();
-   system = new ParticleSystem(this, handler);
-   //*/
   smooth();
 }
 
@@ -35,9 +28,9 @@ public void draw() {
 }
 
 public void keyPressed() {
-  if ((key == 'x') || (key == 'X'))
+  if (key == '+')
     system.setAnimationPeriod(system.animationPeriod()-2);
-  if ((key == 'y') || (key == 'Y'))
+  if (key == '-')
     system.setAnimationPeriod(system.animationPeriod()+2);
 }
 
@@ -65,12 +58,9 @@ class ParticleSystem extends AnimatedObject {
       particle[i] = new Particle2D(parent);
   }
 
-  // Initialization stuff could have also been performed at
-  // setup(), once after the Scene object have been instantiated
-
   // Define here your animation.
   @Override
-    public void animate() {
+  public void animate() {
     for (int i = 0; i < nbPart; i++)
       if (particle[i] != null)
         particle[i].animate();
