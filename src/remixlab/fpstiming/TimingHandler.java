@@ -74,9 +74,9 @@ public class TimingHandler {
 					((SeqTaskableTimer) tJob.timer()).execute();
 		// Animation
 		for (Animatable aObj : animationPool)
-			if (aObj.animationIsStarted())
-				if (aObj.timer().isTrigggered())
-					if (!aObj.externalAnimation())
+			if (aObj.isAnimationStarted())
+				if (aObj.timer().trigggered())
+					if (!aObj.invokeAnimationHandler())
 						aObj.animate();
 	}
 
@@ -201,7 +201,7 @@ public class TimingHandler {
 	}
 
 	/**
-	 * Register the animation object.
+	 * Registers the animation object.
 	 */
 	public void registerAnimation(Animatable object) {
 		if (object.timingHandler() != this)
