@@ -1,5 +1,5 @@
 /*******************************************************************************
- * FPSTiming (version 1.0.0-alpha.1)
+ * FPSTiming (version 1.0.0)
  * Copyright (c) 2013 National University of Colombia, https://github.com/remixlab
  * @author Jean Pierre Charalambos, http://otrolado.info/
  *     
