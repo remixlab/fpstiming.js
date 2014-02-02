@@ -1,7 +1,7 @@
-FPSTiming
-=========
+FPSTiming.js
+============
 
-#Description
+# Description
 
 fps-based timing.
 
@@ -15,8 +15,8 @@ and timing routines are built.
 First (and only) time setup. This is just for documentation purposes. Please visit the next sections.
 
 ```sh
-git clone https://github.com/remixlab/fpstiming.git
-cd fpstiming
+git clone https://github.com/remixlab/fpstiming.js.git
+cd fpstiming.js
 git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
 git subtree add --prefix src/remixlab/fpstiming fpstiming master --squash
 ```
@@ -27,8 +27,8 @@ Use it as any other basic github repo, i.e.,:
 
 ```sh
 # clone it:
-git clone https://github.com/remixlab/fpstiming.git
-cd fpstiming
+git clone https://github.com/remixlab/fpstiming.js.git
+cd fpstiming.js
 # pull changes in:
 # for pull requests simply refer to: https://help.github.com/articles/using-pull-requests
 ```
@@ -38,8 +38,8 @@ cd fpstiming
 Clone the repo and add the remotes (here we refer to them as ["subtrees"](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/)):
 
 ```sh
-git clone https://github.com/remixlab/fpstiming.git
-cd fpstiming
+git clone https://github.com/remixlab/fpstiming.js.git
+cd fpstiming.js
 git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
 ```
 
@@ -62,6 +62,10 @@ To contribute to a the fpstiming subtree
 ```sh
 git subtree push --prefix=src/remixlab/fpstiming fpstiming master
 ```
+
+# Acknowledgements
+
+Cesar Colorado for the js port.
 
 # Author, core developer and maintainer
 
