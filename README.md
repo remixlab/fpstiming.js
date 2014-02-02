@@ -59,7 +59,7 @@ To contribute back to upstream:
 git push
 ```
 
-To contribute to a the fpstiming subtree
+To contribute to the fpstiming subtree
 
 ```sh
 git subtree push --prefix=src/remixlab/fpstiming fpstiming master
