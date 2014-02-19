@@ -1,3 +1,12 @@
+/*******************************************************************************
+ * FPSTiming (version 1.0.0)
+ * Copyright (c) 2014 National University of Colombia, https://github.com/remixlab
+ * @author Jean Pierre Charalambos, http://otrolado.info/
+ *     
+ * All rights reserved. Library that eases the creation of interactive
+ * scenes, released under the terms of the GNU Public License v3.0
+ * which is available at http://www.gnu.org/licenses/gpl.html
+ ******************************************************************************/
 package main.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
@@ -5,10 +14,15 @@ import com.google.gwt.core.client.JavaScriptObject;
 import processing.core.PApplet;
 import remixlab.fpstiming.*;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Animation3D.
+ */
 public class Animation3D  //extends PApplet 
 {
 
 	
+	/** The p. */
 	public PApplet p;
 //	public Animation3D(){}
 //	public Animation3D(JavaScriptObject ctx) {
@@ -16,14 +30,29 @@ public class Animation3D  //extends PApplet
 //	}
 
 	
-    public Animation3D(){}
+    /**
+ * Instantiates a new animation3 d.
+ */
+public Animation3D(){}
+    
+    /**
+     * Instantiates a new animation3 d.
+     *
+     * @param p the p
+     */
     public Animation3D(PApplet p){
     	this.p = p;
     }		
 	
+	/** The system. */
 	ParticleSystem system;
+	
+	/** The handler. */
 	public TimingHandler handler;
 
+	/**
+	 * Setup.
+	 */
 	public void setup() {
 	  p.size(640, 360);
 	  /**
@@ -38,6 +67,9 @@ public class Animation3D  //extends PApplet
 	  p.smooth();
 	}
 
+	/**
+	 * Draw.
+	 */
 	public void draw() {
 		p.background(0);
 
@@ -75,6 +107,9 @@ public class Animation3D  //extends PApplet
 
 
 
+	/**
+	 * Key pressed.
+	 */
 	public void keyPressed() {
 	  if ((p.key() == 'x') || (p.key() == 'X'))
 	    system.setAnimationPeriod(system.animationPeriod()-2);
