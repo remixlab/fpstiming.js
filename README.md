@@ -21,6 +21,8 @@ git clone https://github.com/remixlab/fpstiming.js.git
 cd fpstiming.js
 git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
 git subtree add --prefix src/remixlab/fpstiming fpstiming master --squash
+git remote add -f util https://github.com/remixlab/util_tree.git
+git subtree add --prefix src/remixlab/util util master --squash
 git remote add -f processing.js https://github.com/remixlab/processing.js_tree.git
 git subtree add --prefix src/processing processing.js master --squash
 ```
@@ -45,6 +47,7 @@ Clone the repo and add the remotes (here we refer to them as ["subtrees"](http:/
 git clone https://github.com/remixlab/fpstiming.js.git
 cd fpstiming.js
 git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
+git remote add -f util https://github.com/remixlab/util_tree.git
 git remote add -f processing.js https://github.com/remixlab/processing.js_tree.git
 ```
 
@@ -62,10 +65,10 @@ To contribute back to upstream:
 git push
 ```
 
-To contribute to the fpstiming subtree
+To contribute to a particular remixlab subtree (i.e., fpstiming, or util)
 
 ```sh
-git subtree push --prefix=src/remixlab/fpstiming fpstiming master
+git subtree push --prefix=src/remixlab/<remote> <remote> master
 ```
 
 To contribute to the processsing.js subtree
