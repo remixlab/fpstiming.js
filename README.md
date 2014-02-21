@@ -21,6 +21,8 @@ git clone https://github.com/remixlab/fpstiming.js.git
 cd fpstiming.js
 git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
 git subtree add --prefix src/remixlab/fpstiming fpstiming master --squash
+git remote add -f processing.js https://github.com/remixlab/processing.js_tree.git
+git subtree add --prefix src/processing processing.js master --squash
 ```
 
 ## Read-only access setup
@@ -43,6 +45,7 @@ Clone the repo and add the remotes (here we refer to them as ["subtrees"](http:/
 git clone https://github.com/remixlab/fpstiming.js.git
 cd fpstiming.js
 git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
+git remote add -f processing.js https://github.com/remixlab/processing.js_tree.git
 ```
 
 Update from time to time:
@@ -64,6 +67,14 @@ To contribute to the fpstiming subtree
 ```sh
 git subtree push --prefix=src/remixlab/fpstiming fpstiming master
 ```
+
+To contribute to the processsing.js subtree
+
+```sh
+git subtree push --prefix=src/processing processing.js master
+```
+
+
 ##  Compiling and export to Javascript  ##
 
 **GWT**
