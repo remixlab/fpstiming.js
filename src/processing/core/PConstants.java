@@ -253,10 +253,12 @@ public interface PConstants {
   static final int GROUP           = 0;   // createShape()
 
   static final int POINT           = 2;   // primitive
-  static final int POINTS          = 3;   // vertices
+  static final int POINTS          = 2;   // Processing JS
+  //static final int POINTS          = 3;   // vertices
 
   static final int LINE            = 4;   // primitive
-  static final int LINES           = 5;   // beginShape(), createShape()
+  static final int LINES           = 4;   //Processing JS
+  //static final int LINES           = 5;   // beginShape(), createShape()
   static final int LINE_STRIP      = 50;  // beginShape()
   static final int LINE_LOOP       = 51;
 
@@ -266,7 +268,8 @@ public interface PConstants {
   static final int TRIANGLE_FAN    = 11;  // vertices
 
   static final int QUAD            = 16;  // primitive
-  static final int QUADS           = 17;  // vertices
+  static final int QUADS           = 16;  // Processing JS
+  //static final int QUADS           = 17;  // vertices
   static final int QUAD_STRIP      = 18;  // vertices
 
   static final int POLYGON         = 20;  // in the end, probably cannot

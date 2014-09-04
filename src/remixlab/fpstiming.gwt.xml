@@ -12,7 +12,7 @@
 <module>
 	<inherits name="com.google.gwt.user.User" />
 	<source path="fpstiming"/>
-	
+	<source path="util"/>
 	
 	
 
@@ -22,7 +22,7 @@
   	<set-property name="export" value="yes"/>
   	
   	
-  	<inherits name="com.flipthebird.GwtHashCodeEquals"/>
+
   	
 	
 </module>
