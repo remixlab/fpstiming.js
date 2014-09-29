@@ -16,7 +16,7 @@ import remixlab.fpstiming.*;
 /**
  * The Class AnimatedParticle.
  */
-public class AnimatedParticle extends AnimatedObject {
+public class AnimatedParticle extends AnimatorObject  {
 	  
   	/** The parent. */
   	PApplet parent;

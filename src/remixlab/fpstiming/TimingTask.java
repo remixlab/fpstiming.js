@@ -1,33 +1,33 @@
-/*******************************************************************************
- * FPSTiming (version 1.0.0)
+/*********************************************************************************
+ * fpstiming_tree
  * Copyright (c) 2014 National University of Colombia, https://github.com/remixlab
  * @author Jean Pierre Charalambos, http://otrolado.info/
- *     
+ *
  * All rights reserved. Library that eases the creation of interactive
  * scenes, released under the terms of the GNU Public License v3.0
  * which is available at http://www.gnu.org/licenses/gpl.html
- ******************************************************************************/
+ *********************************************************************************/
+
 package remixlab.fpstiming;
 
 /**
- * An abstract wrapper class holding a {@link #timer()} together
- * with its call back method ({@link remixlab.fpstiming.Taskable#execute()})
- * which derived classes should implement.
+ * An abstract wrapper class holding a {@link #timer()} together with its call back method (
+ * {@link remixlab.fpstiming.Taskable#execute()}) which derived classes should implement.
  */
-public abstract class AbstractTimerJob implements Taskable {
-	protected Timable tmr;
+public abstract class TimingTask implements Taskable {
+	protected Timer	tmr;
 
 	/**
 	 * Returns the timer instance.
 	 */
-	public Timable timer() {
+	public Timer timer() {
 		return tmr;
 	}
 
 	/**
 	 * Sets the timer instance.
 	 */
-	public void setTimer(Timable t) {
+	public void setTimer(Timer t) {
 		tmr = t;
 	}
 
@@ -70,7 +70,7 @@ public abstract class AbstractTimerJob implements Taskable {
 			timer().cancel();
 		}
 	}
-	
+
 	/**
 	 * Timer wrapper method.
 	 */

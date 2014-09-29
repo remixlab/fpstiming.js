@@ -410,15 +410,15 @@ public interface PConstants {
   static final int CODED     = 0xffff;
 
   // key will be CODED and keyCode will be this value
-//  static final int UP        = KeyEvent.VK_UP;
-//  static final int DOWN      = KeyEvent.VK_DOWN;
-//  static final int LEFT      = KeyEvent.VK_LEFT;
-//  static final int RIGHT     = KeyEvent.VK_RIGHT;
+  static final int UP        = 0x26;
+  static final int DOWN      = 0x28;
+  static final int LEFT      = 0x25;
+  static final int RIGHT     = 0x27;
 //
 //  // key will be CODED and keyCode will be this value
-//  static final int ALT       = KeyEvent.VK_ALT;
-//  static final int CONTROL   = KeyEvent.VK_CONTROL;
-//  static final int SHIFT     = KeyEvent.VK_SHIFT;
+  static final int ALT       = 0x12;
+  static final int CONTROL   = 0x11;
+  static final int SHIFT     = 0x10;
 
 
   // orientations (only used on Android, ignored on desktop)

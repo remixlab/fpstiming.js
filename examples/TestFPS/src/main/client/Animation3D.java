@@ -55,6 +55,7 @@ public Animation3D(){}
 	 */
 	public void setup() {
 	  p.size(640, 360);
+	  
 	  /**
 	   scene = new ParticleSystem(this);
 	   handler = new TimingHandler(scene);

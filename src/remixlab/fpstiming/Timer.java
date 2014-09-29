@@ -1,27 +1,37 @@
-/*******************************************************************************
- * FPSTiming (version 1.0.0)
+/*********************************************************************************
+ * fpstiming_tree
  * Copyright (c) 2014 National University of Colombia, https://github.com/remixlab
  * @author Jean Pierre Charalambos, http://otrolado.info/
  *     
  * All rights reserved. Library that eases the creation of interactive
  * scenes, released under the terms of the GNU Public License v3.0
  * which is available at http://www.gnu.org/licenses/gpl.html
- ******************************************************************************/
+ *********************************************************************************/
+
 package remixlab.fpstiming;
 
 /**
  * Interface defining timers.
  */
-public interface Timable {
+public interface Timer {
 	/**
-	 * Runs the timer according to period. The timer may be scheduled
-	 * for repeated fixed-rate execution according to {@link #isSingleShot()}.
+	 * Calls {@link #setPeriod(long)} followed by {@link #run()}.
 	 * 
-	 * @param period time in milliseconds between successive task executions
+	 * @param period
+	 *          time in milliseconds between successive task executions
 	 */
 	public void run(long period);
 
+	/**
+	 * Runs the timer according to {@link #period()}. The timer may be scheduled for repeated fixed-rate execution
+	 * according to {@link #isSingleShot()}.
+	 */
 	public void run();
+
+	/**
+	 * Returns the object defining the timer callback method. May be null.
+	 */
+	public Taskable timingTask();
 
 	/**
 	 * Stops the timer.

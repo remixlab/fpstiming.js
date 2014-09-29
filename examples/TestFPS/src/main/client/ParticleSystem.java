@@ -10,14 +10,14 @@
 package main.client;
 
 import processing.core.PApplet;
-import remixlab.fpstiming.AnimatedObject;
+import remixlab.fpstiming.AnimatorObject;
 import remixlab.fpstiming.TimingHandler;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class ParticleSystem.
  */
-class ParticleSystem extends AnimatedObject {
+class ParticleSystem extends AnimatorObject {
 	  
   	/** The nb part. */
   	int nbPart;
